@@ -1,0 +1,11 @@
+@import './variable.scss';
+
+* {
+    color: $black;
+
+}
+button {
+    border-color: $black;
+    color: $black;
+    
+}
