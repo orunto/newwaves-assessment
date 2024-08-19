@@ -1,3 +1,11 @@
+@import '../variable.scss';
+
 nav {
-    border-bottom: 1px solid #c4c4c4
+    border-bottom: 1px solid #c4c4c4;
+    z-index: 2;
+}
+
+footer {
+    z-index: 2;
+    background-color: $primary;
 }

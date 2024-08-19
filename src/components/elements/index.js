@@ -1,3 +1,6 @@
 export { default as Record } from './Record'
 export { default as MeetingInfo } from './MeetingInfo'
 export { default as ParticipantCount } from './ParticipantCount'
+export { default as ParticipantsToggle } from './ParticipantsToggle'
+export { default as Others } from './participantVideo/Others'
+export { default as You } from './participantVideo/You'

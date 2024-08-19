@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const chatState = createSlice({
-  name: 'counter',
+  name: 'chat',
   initialState: {
     value: false
   },

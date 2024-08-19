@@ -4,8 +4,12 @@
     color: $black;
 
 }
-button {
-    border-color: $black;
-    color: $black;
-    
+
+main {
+    background-color: #E5E5E5;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 102px 40px;
+    box-sizing: border-box;
 }

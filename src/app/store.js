@@ -1,5 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
+import { chatState, participants } from '../lib'
 
 export default configureStore({
-  reducer: {}
+  reducer: {
+    chat: chatState,
+    participant: participants
+  }
 })

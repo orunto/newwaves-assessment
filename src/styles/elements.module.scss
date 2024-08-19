@@ -1,12 +1,70 @@
+@import '../variable.scss';
+
 // Meeting Info
-#meetinginfo  {
+#meetinginfo {
     box-sizing: border-box;
 
     .hr {
-        height: 100%!important;
-        width: 1px!important;
+        height: 100% !important;
+        width: 1px !important;
     }
+
     div {
         gap: 6px;
+    }
+}
+
+
+// Header buttons
+button {
+    border-color: $black;
+    color: $black;
+
+}
+
+
+// Participants Toggle
+#participantstoggle button {
+    background-color: $secondary;
+    padding: 2px;
+    opacity: 0.25;
+
+    span {
+        color: #fff !important;
+
+    }
+
+    img {
+        height: 26px;
+        width: 26px;
+        object-fit: cover;
+    }
+}
+
+#active {
+    opacity: 1 !important;
+}
+
+
+
+// Participant Video
+#others {
+    border-radius: 20px;
+
+    button {
+        background-color: #1B1B1B;
+        color: rgb(245, 249, 255, 0.95)
+    }
+}
+
+#you {
+    border-radius: 20px;
+
+    div button:first-child {
+        background-color: #CC525F;
+    }
+
+    div button:last-child {
+        background-color: rgb(93, 149, 126, 0.48);
     }
 }

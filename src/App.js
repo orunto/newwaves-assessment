@@ -1,11 +1,15 @@
 import './App.scss';
-import { Header } from './components/compounds';
+import { ControlsTab, Header, ParticipantScreen } from './components/compounds';
 
 
 function App() {
   return (
     <>
       <Header/>
+      <main>
+        <ParticipantScreen/>
+      </main>
+      <ControlsTab/>
     </>
   );
 }
