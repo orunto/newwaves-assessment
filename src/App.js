@@ -1,17 +1,20 @@
-import './App.scss';
-import { Chat, Header, ParticipantScreen } from './components/compounds';
-import { ControlsTab } from './components/elements';
-
+import "./App.scss";
+import { Chat, Header, ParticipantScreen } from "./components/compounds";
+import { ControlsTab } from "./components/elements";
 
 function App() {
   return (
     <>
-      <Header/>
+      <div className="loadercontainer">
+        <h3>Entering Meeting Room Now...</h3>
+        <div className="loader"></div>
+      </div>
+      <Header />
       <main>
-        <ParticipantScreen/>
-        <Chat/>
+        <ParticipantScreen />
+        <Chat />
       </main>
-      <ControlsTab/>
+      <ControlsTab />
     </>
   );
 }
