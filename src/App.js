@@ -1,5 +1,6 @@
 import './App.scss';
-import { ControlsTab, Header, ParticipantScreen } from './components/compounds';
+import { Chat, Header, ParticipantScreen } from './components/compounds';
+import { ControlsTab } from './components/elements';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header/>
       <main>
         <ParticipantScreen/>
+        <Chat/>
       </main>
       <ControlsTab/>
     </>

@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { chatState, participants } from '../lib'
+import { chatMessages, chatPosition, DialogState, participants } from '../lib'
 
 export default configureStore({
   reducer: {
-    chat: chatState,
-    participant: participants
+    chat: chatPosition,
+    participant: participants,
+    messages: chatMessages,
+    dialog: DialogState
   }
 })

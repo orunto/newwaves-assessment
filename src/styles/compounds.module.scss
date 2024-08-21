@@ -9,3 +9,75 @@ footer {
     z-index: 2;
     background-color: $primary;
 }
+
+
+// Chat
+#chat {
+    width: 432px;
+    height: calc(100vh - 192px);
+    border-radius: 23px;
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: #3E8466;
+    border: 1px solid #5D957E;
+    position: fixed;
+    top: 96px;
+    right: 39px;
+    z-index: 4;
+    transition: 0.3s;
+
+    #message {
+        background-color: #5D957E;
+
+        svg {
+            width: 20px !important;
+            height: 20px !important;
+            flex-shrink: 0;
+        }
+    }
+
+    #chatbox {
+        height: calc(100% - 122px);
+    }
+
+    #chatcontainer {
+        box-sizing: border-box;
+        flex: 0 1 inherit !important
+    }
+
+
+    textarea {
+        background-color: #5D957E;
+        color: #fff;
+    }
+
+    textarea::placeholder {
+        color: #fff;
+    }
+
+    textarea:focus {
+        border: none;
+        outline: none;
+    }
+
+    fieldset:has(input) {
+        background-color: #5D957E;
+        z-index: 5;
+    }
+
+    input {
+        background-color: transparent;
+        color: #5D957E
+    }
+
+    input::placeholder {
+        color: rgb(224, 236, 255, 0.8);
+
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+
+}

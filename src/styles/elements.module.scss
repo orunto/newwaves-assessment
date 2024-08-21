@@ -68,3 +68,105 @@ button {
         background-color: rgb(93, 149, 126, 0.48);
     }
 }
+
+
+
+// Controls Tab
+#controls button:hover {
+    background-color: #47896D;
+}
+
+#controls button {
+    transition: 0.1s
+}
+
+#middle button:first-child {
+    background-color: #47896D;
+}
+
+#middle button:last-child {
+    background-color: #CC525F;
+    border: none;
+
+    hr {
+        background-color: rgb(0, 0, 0, 0.2);
+    }
+
+    svg:last-child {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+#middle button:last-child:hover {
+    background-color: #fff;
+    border: none;
+
+    svg path {
+        stroke: #CC525F;
+        fill: #CC525F
+    }
+}
+
+
+
+// chat messages
+#general {
+    box-sizing: border-box;
+
+    #privatebutton {
+        display: none;
+    }
+
+    header div span {
+        color: rgb(224, 236, 255, 0.8);
+    }
+
+    button svg {
+        transform: rotate(90deg);
+    }
+
+    p {
+        color: rgb(245, 249, 255, 0.95);
+        white-space: pre-wrap;
+        line-height: 24px;
+
+    }
+}
+
+#private {
+    box-sizing: border-box;
+    background-color: #5D957E;
+
+    #generalbutton {
+        display: none;
+    }
+
+    #privatebutton {
+        font-size: 10px;
+
+        span:first-child {
+            color: rgb(224, 236, 255, 0.8);
+            
+        }
+
+        svg {
+            transform: rotate(1deg);
+        }
+    }
+
+    header div span {
+        color: rgb(224, 236, 255, 0.8);
+    }
+
+    button svg {
+        transform: rotate(90deg);
+    }
+
+    p {
+        color: rgb(245, 249, 255, 0.95);
+        white-space: pre-wrap;
+        line-height: 24px;
+
+    }
+}
