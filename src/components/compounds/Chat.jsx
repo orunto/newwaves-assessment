@@ -27,6 +27,7 @@ export default function Chat() {
             time: datetime.getTime
         }
         dispatch(newmessage(newtext))
+        setMessage("")
     }
 
     return <div id={styles['chat']} className='flex flex-col justify-between gap-2' style={{ right: position }}>
@@ -65,7 +66,7 @@ export default function Chat() {
             </div>
 
             <fieldset className='w-full flex items-center self-end'>
-                <textarea onChange={(e) => setMessage(e.target.value)} className='w-full p-4 rounded-lg flex h-14 items-center text-sm' placeholder='Send a message to everyone' type="text" name="" id="" />
+                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='w-full p-4 rounded-lg flex h-14 items-center text-sm' placeholder='Send a message to everyone' type="text" name="" id="" />
                 <div className='flex items-center gap-4 -ml-20'>
                     <EmojiIcon />
 
